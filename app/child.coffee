@@ -1,10 +1,9 @@
 Parent = require('./parent')
 
-class Child extends Parent
+module.exports = class Child extends Parent
+
+  walk: ->
+    super
 
   run: ->
-    super
     console.log('CHILD RUN')
-    return @
-
-module.exports = Child

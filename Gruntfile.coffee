@@ -9,29 +9,25 @@ module.exports = (grunt) ->
           browserifyOptions:
             extensions: [ '.coffee' ]
         files:
-          'build/app.js': [ 'app/**/*.coffee' ]
+          'dist/app.js': [ 'app/**/*.coffee' ]
       options:
         transform: ['coffeeify']
 
-    coffee:
-      options:
-        bare: true
-      compile:
-        expand: true
-        cwd: 'app'
-        src: [ '*.coffee' ]
-        dest: 'test/app/'
-        ext: '.js'
+    coffeelint:
+      tools:  ['Gruntfile.coffe', 'karma.conf.coffee']
+      app:    ['app/**/*.coffee']
+      spec:   ['spec/**/*.coffee']
 
     karma:
       test:
         configFile: 'karma.conf.coffee'
 
   grunt.loadNpmTasks 'grunt-browserify'
-  grunt.loadNpmTasks 'grunt-contrib-coffee'
+  grunt.loadNpmTasks 'grunt-coffeelint'
   grunt.loadNpmTasks 'grunt-karma'
 
   grunt.registerTask 'test', [
+    'coffeelint'
     'karma'
   ]
 

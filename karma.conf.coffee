@@ -1,16 +1,32 @@
 module.exports = (config)->
   config.set
     basePath: ''
+    browsers:  [ 'PhantomJS' ]
+    port:      9876
 
-    frameworks: ['mocha', 'chai']
+    frameworks: ['mocha', 'chai', 'sinon']
 
     files: [
+      #
+      # bootstrap
+      #
+      # this is to support commonJs by defining require()
       'bower_components/commonjs-require-definition/require.js'
+      # add more here, like backbone, jquery, etc.
+
+      #
+      # things to test
+      #
       'app/**/*.coffee'
+
+      #
+      # specs to test against
+      #
       'spec/**/*.coffee'
     ]
 
     preprocessors:
+      # the coverage preprocessor runs Ibrik to compile coffee
       'app/**/*.coffee':  ['commonjs', 'coverage']
       'spec/**/*.coffee': ['coffee']
 
@@ -21,13 +37,14 @@ module.exports = (config)->
     reporters: ['spec', 'coverage']
 
     coverageReporter:
-      type:   'html'
-      dir:    'reports'
-      subdir: 'coverage'
+      dir:    'reports/coverage/'
+      #subdir doesn't work
+      reporters: [
+        { type: 'lcov' }
+        { type: 'text-summary' }
+      ]
 
-    port:      9876
-    colors:    true
     logLevel:  config.LOG_INFO
+    colors:    true
     autoWatch: true
-    browsers:  ['PhantomJS']
     singleRun: true

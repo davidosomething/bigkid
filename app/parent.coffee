@@ -1,7 +1,7 @@
-class Parent
+module.exports = class Parent
 
-  run: ->
-    console.log('PARENT RUN')
-    return @
+  walk: ->
+    console.log('WALK')
 
-module.exports = Parent
+  talk: ->
+    console.log('HELLO')
