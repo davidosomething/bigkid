@@ -11,7 +11,7 @@ module.exports = (config)->
     ]
 
     preprocessors:
-      'app/**/*.coffee':  ['commonjs', 'coffee']
+      'app/**/*.coffee':  ['commonjs', 'coverage']
       'spec/**/*.coffee': ['coffee']
 
     commonjsPreprocessor:
@@ -21,9 +21,9 @@ module.exports = (config)->
     reporters: ['spec', 'coverage']
 
     coverageReporter:
-      reporters: [
-        'html'
-      ]
+      type:   'html'
+      dir:    'reports'
+      subdir: 'coverage'
 
     port:      9876
     colors:    true

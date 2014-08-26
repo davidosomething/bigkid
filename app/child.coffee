@@ -1,4 +1,4 @@
-Parent = require('./parent.coffee')
+Parent = require('./parent')
 
 class Child extends Parent
 
