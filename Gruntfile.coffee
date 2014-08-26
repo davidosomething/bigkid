@@ -40,6 +40,7 @@ module.exports = (grunt) ->
 
   grunt.loadNpmTasks 'grunt-browserify'
   grunt.loadNpmTasks 'grunt-coffeelint'
+  grunt.loadNpmTasks 'grunt-coveralls'
   grunt.loadNpmTasks 'grunt-karma'
 
 ################################################################################
