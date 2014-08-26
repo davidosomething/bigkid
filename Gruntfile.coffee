@@ -34,3 +34,8 @@ module.exports = (grunt) ->
   grunt.registerTask 'build', [
     'browserify'
   ]
+
+  grunt.registerTask 'default', [
+    'test'
+    'build'
+  ]
