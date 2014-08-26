@@ -27,9 +27,9 @@ a real CoffeeScript compiler.
 
 ----
 
-[coverallsBadge]: https://coveralls.io/repos/davidosomething/karmatest/badge.png
-[coverallsLink]:  https://coveralls.io/r/davidosomething/karmatest
-[davidBadge]:     https://david-dm.org/davidosomething/karmatest.png
-[packageJson]:    https://github.com/davidosomething/karmatest/blob/master/package.json
-[travisLink]:     https://travis-ci.org/davidosomething/karmatest
-[travisBadge]:    http://travis-ci.org/davidosomething/karmatest.png
+[coverallsBadge]: https://coveralls.io/repos/davidosomething/bigkid/badge.png
+[coverallsLink]:  https://coveralls.io/r/davidosomething/bigkid
+[davidBadge]:     https://david-dm.org/davidosomething/bigkid.png
+[packageJson]:    https://github.com/davidosomething/bigkid/blob/master/package.json
+[travisLink]:     https://travis-ci.org/davidosomething/bigkid
+[travisBadge]:    http://travis-ci.org/davidosomething/bigkid.png
