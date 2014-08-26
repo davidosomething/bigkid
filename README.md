@@ -27,8 +27,8 @@ a real CoffeeScript compiler.
 
 ----
 
-[coverallsBadge]: https://coveralls.io/repos/davidosomething/bigkid/badge.png
-[coverallsLink]:  https://coveralls.io/r/davidosomething/bigkid
+[coverallsBadge]: https://img.shields.io/coveralls/davidosomething/bigkid.svg
+[coverallsLink]:  https://coveralls.io/r/davidosomething/bigkid?branch=master
 [davidBadge]:     https://david-dm.org/davidosomething/bigkid.png
 [packageJson]:    https://github.com/davidosomething/bigkid/blob/master/package.json
 [travisLink]:     https://travis-ci.org/davidosomething/bigkid
