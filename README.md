@@ -17,6 +17,9 @@ All of those dependencies are set up and working for you.
 A really simple browserify project exists in `app/` and a basic test suite in
 `spec`
 
+## How do I use it?
+Tear it apart and pick at what you need.
+
 ## Props
 Wouldn't be possible without [@kylewelsby](https://github.com/kylewelsby)'s fork of karma-coverage.
 It fixes the problem of Iblik (~Istanbul) using coffeescript-redux instead of
