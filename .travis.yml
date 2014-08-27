@@ -15,6 +15,7 @@ before_install:
 
 install:
   - npm install
+  - bower install
 
 script:
   - grunt build
