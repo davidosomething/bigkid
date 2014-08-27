@@ -6,14 +6,20 @@ module.exports = (grunt) ->
 ################################################################################
 
     browserify:
+      options:
+        # use this since we use bower instead of NPM for components
+        # alphabetically
+        alias: [
+          './bower_components/jquery/dist/jquery.js:jquery'
+        ]
+        transform: [ 'coffeeify' ]
       dist:
         options:
           browserifyOptions:
-            extensions: [ '.coffee' ]
+            extensions: [ '.coffee', '.js' ]
+            debug: true
         files:
           'dist/app.js': [ 'app/**/*.coffee' ]
-      options:
-        transform: ['coffeeify', 'browserify-shim']
 
 ################################################################################
 

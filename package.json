@@ -7,13 +7,8 @@
   },
   "author": "David O'Trakoun <me@davidosomething.com> (http://davidosomething.com/)",
   "license": "ISC",
-  "browser": {
-    "jquery": "./bower_components/jquery/dist/jquery.js"
-  },
-  "browserify-shim": "./config/shim.js",
   "devDependencies": {
     "browserify": "^5.10.1",
-    "browserify-shim": "^3.7.0",
     "chai": "^1.9.1",
     "coffee-script": "^1.8.0",
     "coffeeify": "^0.7.0",
