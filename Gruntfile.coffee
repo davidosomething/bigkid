@@ -13,7 +13,7 @@ module.exports = (grunt) ->
         files:
           'dist/app.js': [ 'app/**/*.coffee' ]
       options:
-        transform: ['coffeeify']
+        transform: ['coffeeify', 'browserify-shim']
 
 ################################################################################
 
