@@ -12,5 +12,8 @@
   ],
   "devDependencies": {
     "commonjs-require-definition": "~0.1.2"
+  },
+  "dependencies": {
+    "jquery": "~2.1.1"
   }
 }

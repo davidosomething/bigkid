@@ -14,6 +14,13 @@ module.exports = (config)->
       'bower_components/commonjs-require-definition/require.js'
       # add more here, like backbone, jquery, etc.
 
+      # shimmed
+      # add to test/shim.coffee
+      #'bower_components/lodash/dist/lodash.underscore.js'
+      #'bower_components/backbone/backbone.js'
+      'bower_components/jquery/dist/jquery.js'
+      'test/shim.coffee'
+
       #
       # things to test
       #
@@ -29,6 +36,7 @@ module.exports = (config)->
       # the coverage preprocessor runs Ibrik to compile coffee
       'app/**/*.coffee':  ['commonjs', 'coverage']
       'spec/**/*.coffee': ['coffee']
+      'test/**/*.coffee': ['coffee']
 
     commonjsPreprocessor:
       options:
