@@ -19,6 +19,7 @@ module.exports = (config)->
       #'bower_components/lodash/dist/lodash.underscore.js'
       #'bower_components/backbone/backbone.js'
       'bower_components/jquery/dist/jquery.js'
+      'config/browserify-shim.coffee'
       'config/karma-shim.coffee'
 
       #
@@ -33,10 +34,13 @@ module.exports = (config)->
     ]
 
     preprocessors:
+      # don't touch -- these load the lib shims
+      'config/browserify-shim.coffee': ['commonjs', 'coffee']
+      'config/karma-shim.coffee': ['coffee']
+
       # the coverage preprocessor runs Ibrik to compile coffee
       'app/**/*.coffee': ['commonjs', 'coverage']
       'spec/**/*.coffee': ['coffee']
-      'config/**/*.coffee': ['coffee']
 
     commonjsPreprocessor:
       options:
