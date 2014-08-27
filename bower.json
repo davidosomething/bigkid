@@ -1,0 +1,16 @@
+{
+  "name": "bigkid",
+  "version": "0.0.0",
+  "homepage": "https://github.com/davidosomething/bigkid",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "commonjs-require-definition": "~0.1.2"
+  }
+}
