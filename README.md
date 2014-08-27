@@ -14,11 +14,18 @@ compilation, testing, and code coverage.
 ## What does it include?
 Look at the `package.json` file, `Gruntfile.coffee`, and `karma.conf.coffee`
 All of those dependencies are set up and working for you.
+
+Also CommonJS modules are fully supported by the app and tests. Add external
+libraries and shims into `config/browserify-shim.coffee`
+
 A really simple browserify project exists in `app/` and a basic test suite in
 `spec`
 
 ## How do I use it?
 Tear it apart and pick at what you need.
+
+`grunt build` will compile the project
+`grunt test` will run the test runner (karma)
 
 ## Props
 Wouldn't be possible without [@kylewelsby](https://github.com/kylewelsby)'s fork of karma-coverage.
