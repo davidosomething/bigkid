@@ -8,7 +8,7 @@ module.exports = ->
   ############################################################################
 
   @config 'coffeelint',
-    tools:  ['Gruntfile.coffe', 'karma.conf.coffee']
+    tools:  ['Gruntfile.coffee', 'karma.conf.coffee']
     app:    ['app/**/*.coffee']
     spec:   ['spec/**/*.coffee']
 
