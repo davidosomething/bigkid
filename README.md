@@ -2,6 +2,7 @@
 
 [![Travis CI build status][travisBadge]][travisLink]
 [![David dependency status][davidBadge]][packageJson]
+[![Development Dependency Status][davidDevBadge]][davidDevLink]
 [![Coverage Status][coverallsBadge]][coverallsLink]
 
 > Tooling starter for projects using CoffeeScript, Browserify/CommonJS, Karma,
@@ -37,6 +38,8 @@ a real CoffeeScript compiler.
 [coverallsBadge]: https://img.shields.io/coveralls/davidosomething/bigkid.svg
 [coverallsLink]:  https://coveralls.io/r/davidosomething/bigkid?branch=master
 [davidBadge]:     https://david-dm.org/davidosomething/bigkid.png
-[packageJson]:    https://github.com/davidosomething/bigkid/blob/master/package.json
+[davidLink]:      https://david-dm.org/davidosomething/bigkid#info=dependencies
+[davidDevBadge]:  https://david-dm.org/davidosomething/bigkid/dev-status.png?theme=shields.io
+[davidDevLink]:   https://david-dm.org/davidosomething/bigkid#info=devDependencies
 [travisLink]:     https://travis-ci.org/davidosomething/bigkid
 [travisBadge]:    http://travis-ci.org/davidosomething/bigkid.png
